@@ -13,3 +13,8 @@ foreach ($vals as $val) {
     echo (int)$val;
     echo '<br>';
 }
+
+// Implicit conversion, or type juggling
+if (1 == '1') {
+    echo 'True';
+}
