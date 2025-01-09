@@ -16,4 +16,4 @@ if (VAT >= 0.2) {
 
 $total = $price - $price * DISCOUNT;
 
-echo $total;
+echo "$total\n";
