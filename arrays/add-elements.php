@@ -20,3 +20,17 @@ $books = [
 
 $books = ['Emma' => 'Jane Austen'] + $books;
 print_r($books);
+
+// Append an element to an array
+$shopping_list = [
+    'Bananas',
+    'Cherries'
+];
+
+// Append a single element
+$shopping_list[] = 'Dates';
+print_r($shopping_list);
+
+// Append multiple elements
+array_push($shopping_list, 'Figs', 'Oranges');
+print_r($shopping_list);
