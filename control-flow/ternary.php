@@ -1,8 +1,14 @@
 <?php
 
-$value = rand(0, 1);
+$values = [0, 1, false, true, '', 'hello'];
 
-// The shorthand ternary operator assigns $value to $result if $value is truthy, else 'default'
-$result = $value ?: 'default';
+function assign_value($value): void
+{
+    // The shorthand ternary operator assigns $value to $result if $value is truthy, else 'default'
+    $result = $value ?: 'default';
+    echo $result . '<br>';
+}
 
-echo $result;
+foreach ($values as $value) {
+    assign_value($value);
+}
