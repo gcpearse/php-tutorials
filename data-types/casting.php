@@ -10,11 +10,10 @@ $vals = [
 ];
 
 foreach ($vals as $val) {
-    echo (int)$val;
-    echo '<br>';
+    echo (int)$val . "\n";
 }
 
 // Implicit conversion, or type juggling
 if (1 == '1') {
-    echo 'True';
+    echo "True\n";
 }

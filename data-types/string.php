@@ -2,14 +2,10 @@
 
 $language = 'PHP';
 
-echo 'We are learning ' . $language;
-echo '<br>';
+echo 'We are learning ' . $language . "\n";
 
-echo "We are learning $language";
-echo '<br>';
+echo "We are learning $language\n";
 
-echo $language[0];
-echo '<br>';
+echo $language[0] . "\n";
 
-echo strlen($language);
-echo '<br>';
+echo strlen($language) . "\n";

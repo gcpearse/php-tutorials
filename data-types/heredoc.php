@@ -6,16 +6,16 @@ $word = 'world';
 $heredoc_message = <<<IDENTIFIER
 The programmer said "Hello, $word!".
 This is an example of heredoc syntax.
+
 IDENTIFIER;
 
 echo $heredoc_message;
-
-echo '<br>';
 
 // A nowdoc string behaves like a string in single quotation marks
 $nowdoc_message = <<<'IDENTIFIER'
 The programmer said "Hello, world!".
 This is an example of nowdoc syntax.
+
 IDENTIFIER;
 
 echo $nowdoc_message;
