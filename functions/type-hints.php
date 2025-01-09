@@ -1,5 +1,8 @@
 <?php
 
+// Enable strict typing in this file
+declare(strict_types=1);
+
 function divide(int $x, int $y): int|float
 {
     return $x / $y;
