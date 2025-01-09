@@ -7,4 +7,4 @@ for ($i = 0; $i < 5; $i++):
     $count++;
 endfor;
 
-echo "Final count: $count";
+echo "Final count: $count\n";

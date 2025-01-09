@@ -16,10 +16,10 @@ function is_authorised($role): bool
         case 'admin':
         case 'supervisor':
         case 'user':
-            echo "Authorised <br>";
+            echo "Authorised\n";
             return true;
         default:
-            echo "Unauthorised <br>";
+            echo "Unauthorised\n";
             return false;
     endswitch;
 }

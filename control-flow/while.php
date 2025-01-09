@@ -7,4 +7,4 @@ while ($count < 5):
     $count++;
 endwhile;
 
-echo "Final count: $count";
+echo "Final count: $count\n";

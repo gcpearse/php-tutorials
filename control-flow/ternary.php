@@ -6,7 +6,7 @@ function assign_value($value): void
 {
     // The shorthand ternary operator assigns $value to $result if $value is truthy, else 'default'
     $result = $value ?: 'default';
-    echo $result . '<br>';
+    echo "$result\n";
 }
 
 foreach ($values as $value) {

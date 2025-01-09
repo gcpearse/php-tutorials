@@ -15,7 +15,7 @@ function display_grade($score): void
         echo "$score% - F";
     endif;
 
-    echo '<br>';
+    echo "\n";
 }
 
 for ($i = 0; $i < 10; $i++) {
