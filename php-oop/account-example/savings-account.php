@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 class SavingsAccount extends Account
 {
     private float $interestRate;
