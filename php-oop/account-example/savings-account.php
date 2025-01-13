@@ -22,6 +22,6 @@ class SavingsAccount extends Account
 
     public function applyInterest(): void
     {
-        $this->deposit($this->getBalance() * $this->interestRate);
+        $this->deposit($this->balance * $this->interestRate);
     }
 }
