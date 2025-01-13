@@ -8,7 +8,7 @@ class Account
 {
     public function __construct(
         private readonly string   $accountNumber,
-        private float             $balance,
+        protected float           $balance,
         private readonly Customer $customer,
     )
     {
