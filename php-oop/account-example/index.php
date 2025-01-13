@@ -6,7 +6,10 @@ require 'savings-account.php';
 $customer = new Customer(
     'John',
     'Smith',
+    Gender::MALE,
 );
+
+echo $customer;
 
 $account = new Account(
     '08760432',
