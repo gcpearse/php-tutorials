@@ -4,41 +4,41 @@ declare(strict_types=1);
 
 class Rectangle
 {
-    private float $area;
     private float $height;
     private float $width;
 
-    public function __construct(float $width, float $height)
+    public function __construct(float $height, float $width)
     {
-        $this->width = $width;
-        $this->height = $height;
-        $this->setArea();
+        if ($height > 0 && $width > 0) {
+            $this->width = $width;
+            $this->height = $height;
+        }
     }
 
     public function __toString(): string
     {
+        $area = $this->getArea();
+
         return <<<TEXT
-        Area: $this->area
+        Area: $area
         Height: $this->height
         Width: $this->width
         
         TEXT;
     }
 
-    private function setArea(): void
+    private function getArea(): float
     {
-        $this->area = $this->width * $this->height;
+        return $this->width * $this->height;
     }
 
     public function setHeight(float $height): void
     {
-        $this->height = $height;
-        $this->setArea();
+        if ($height > 0) $this->height = $height;
     }
 
     public function setWidth(float $width): void
     {
-        $this->width = $width;
-        $this->setArea();
+        if ($width > 0) $this->width = $width;
     }
 }
