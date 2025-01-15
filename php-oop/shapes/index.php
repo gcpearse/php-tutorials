@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 require 'circle.php';
 require 'rectangle.php';
 
